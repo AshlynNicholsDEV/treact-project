@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 2 Final Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <section id="landing">
+      <nav>
+        <div class="row nav__row">
+          <div class="nav__logo">
+            <img
+              src="https://module-2-fp-example-website.vercel.app/assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
+              alt="treact logo"
+            />
+            <div class="nav__title">Treact</div>
+          </div>
+          <div class="nav__links">
+            <a href="#" class="nav__link">About</a>
+            <a href="#" class="nav__link">Blog</a>
+            <a href="#" class="nav__link">Pricing</a>
+            <a href="#" class="nav__link">Contact Us</a>
+            <a href="#" class="nav__link login">Login</a>
+            <a href="#" class="nav__link nav__link--primary">Sign Up </a>
+          </div>
+          <button class="btn__menu" onclick="openMenu()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="btn__menu--svg"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <div class="menu">
+        <button
+          class="button__menu button__menu--close"
+          onclick="closeMenu()"
+        ></button>
+        <div class="menu__links">
+          <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
+          <a href="#blog" class="menu__link" onclick="closeMenu()">Blog</a>
+          <a href="#pricing" class="menu__link" onclick="closeMenu()"
+            >Pricing</a
+          >
+          <a href="#contact us" class="menu__link" onclick="closeMenu()"
+            >Contact Us</a
+          >
+          <a href="#login" class="menu__link" onclick="closeMenu()">Login</a>
+          <a href="#signup" class="menu__link" onclick="closeMenu()">Sign Up</a>
+        </div>
+      </div>
+
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="header__description">
+              <h1>
+                Beautiful React Templates
+                <span class="purple">for you.</span>
+              </h1>
+              <p class="header__description--para">
+                Our templates are easy to setup, understand and customize. Fully
+                modular components with a variety of pages and components.
+              </p>
+              <div class="header__email">
+                <input
+                  type="text"
+                  class="header__email--input"
+                  placeholder="Your E-mail Address"
+                />
+                <button class="header__email--btn">Get Started</button>
+              </div>
+              <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
+              <img
+                src="https://module-2-fp-example-website.vercel.app/assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"
+                alt="logos of Fortune, The Weather Channel, Fast Company, National Geographic"
+                class="header__customers"
+              />
+            </div>
+
+            <figure class="header__img--wrapper">
+              <img
+                src="https://module-2-fp-example-website.vercel.app/assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
+                alt="woman at computer at desk"
+                class="header__img"
+              />
+            </figure>
+          </div>
+        </div>
+      </header>
+    </section>
+
+    <main>
+      <section id="features">
+        <div class="container">
+          <div class="row__narrow">
+            <h4 class="section__tag">FEATURES</h4>
+            <h2 class="section__title">
+              We Have Amazing <span class="purple">Service.</span>
+            </h2>
+            <div class="section__para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              odit, sit sint assumenda eligendi perferendis aliquam numquam
+              dolore, fuga voluptate quasi voluptas eos quod quam vero non alias
+              ullam. Eos?
+            </div>
+            <div class="features">
+              <div class="feature">
+                <div class="feature__row">
+                  <figure class="feature__img--wrapper">
+                    <img
+                      src="https://module-2-fp-example-website.vercel.app/assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
+                      alt="sheild"
+                      class="feature__img"
+                    />
+                  </figure>
+                  <div class="feature__text">
+                    <h2 class="feature__title">Secure</h2>
+                    <p class="feature__para">
+                      Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                      quis nostrud.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
