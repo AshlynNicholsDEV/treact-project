@@ -145,9 +145,6 @@ nav {
   align-items: center;
 }
 
-div {
-}
-
 /* 
 
 HEADER / ABOUT US ↓
@@ -165,9 +162,6 @@ header .row {
 FEATURES ↓
 
 */
-
-#features {
-}
 
 #features .row__narrow {
   display: flex;
