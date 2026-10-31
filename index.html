@@ -22,20 +22,20 @@
         <div class="row nav__row">
           <div class="nav__logo">
             <img
-              src="https://module-2-fp-example-website.vercel.app/assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
+              src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
               alt="treact logo"
             />
             <div class="nav__title">Treact</div>
           </div>
           <div class="nav__links">
-            <a href="#" class="nav__link">About</a>
-            <a href="#" class="nav__link">Blog</a>
-            <a href="#" class="nav__link">Pricing</a>
-            <a href="#" class="nav__link">Contact Us</a>
-            <a href="#" class="nav__link login">Login</a>
-            <a href="#" class="nav__link nav__link--primary">Sign Up </a>
+            <a id="nav-about" href="#features" class="nav__link">About</a>
+            <a id="nav-blog" href="#" class="nav__link">Blog</a>
+            <a id="nav-pricing" href="#pricing" class="nav__link">Pricing</a>
+            <a id="nav-contact-us" href="#footer" class="nav__link">Contact Us</a>
+            <a id="nav-login" href="#" class="nav__link login">Login</a>
+            <a id="nav-sign-up" href="#" class="nav__link nav__link--primary">Sign Up</a>
           </div>
-          <button class="btn__menu" onclick="openMenu()">
+          <button type="button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false" class="btn__menu" onclick="openMenu()">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -56,22 +56,17 @@
         </div>
       </nav>
 
-      <div class="menu">
+      <div id="mobile-menu" class="menu" aria-hidden="true" inert>
         <button
-          class="button__menu button__menu--close"
+          type="button" aria-label="Close menu" class="button__menu button__menu--close"
           onclick="closeMenu()"
         ></button>
         <div class="menu__links">
-          <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
-          <a href="#blog" class="menu__link" onclick="closeMenu()">Blog</a>
-          <a href="#pricing" class="menu__link" onclick="closeMenu()"
-            >Pricing</a
-          >
-          <a href="#contactus" class="menu__link" onclick="closeMenu()"
-            >Contact Us</a
-          >
-          <a href="#login" class="menu__link" onclick="closeMenu()">Login</a>
-          <a href="#signup" class="menu__link" onclick="closeMenu()">Sign Up</a>
+          <a id="mobile-nav-about" href="#features" class="menu__link" onclick="closeMenu()">About</a>
+          <a id="mobile-nav-blog" href="#" class="menu__link" onclick="closeMenu()">Blog</a>
+          <a id="mobile-nav-pricing</a->-<a-href="#contactus"-class="menu__link"-onclick="closemenu()"->contact-us</a->-<a-href="#login"-class="menu__link"-onclick="closemenu()">login" href="#" class="menu__link" onclick="closeMenu()"
+            >Pricing</a > <a href="#contactus" class="menu__link" onclick="closeMenu()" >Contact Us</a > <a href="#login" class="menu__link" onclick="closeMenu()">Login</a>
+          <a id="mobile-nav-sign-up" href="#" class="menu__link" onclick="closeMenu()">Sign Up</a>
         </div>
       </div>
 
@@ -97,7 +92,7 @@
               </div>
               <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
               <img
-                src="https://module-2-fp-example-website.vercel.app/assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"
+                src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"
                 alt="logos of Fortune, The Weather Channel, Fast Company, National Geographic"
                 class="header__customers"
               />
@@ -105,7 +100,7 @@
 
             <figure class="header__img--wrapper">
               <img
-                src="https://module-2-fp-example-website.vercel.app/assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
+                src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
                 alt="woman at computer at desk"
                 class="header__img"
               />
@@ -137,7 +132,7 @@
                 <div class="feature__row">
                   <figure class="feature__img--wrapper">
                     <img
-                      src="https://module-2-fp-example-website.vercel.app/assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
+                      src="./assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
                       alt="Shield"
                       class="feature__img"
                     />
@@ -157,7 +152,7 @@
                 <div class="feature__row">
                   <figure class="feature__img--wrapper">
                     <img
-                      src="https://module-2-fp-example-website.vercel.app/assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg"
+                      src="./assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg"
                       alt="Headphones"
                       class="feature__img"
                     />
@@ -177,7 +172,7 @@
                 <div class="feature__row">
                   <figure class="feature__img--wrapper">
                     <img
-                      src="https://module-2-fp-example-website.vercel.app/assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg"
+                      src="./assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg"
                       alt="Slider controls"
                       class="feature__img"
                     />
@@ -197,7 +192,7 @@
                 <div class="feature__row">
                   <figure class="feature__img--wrapper">
                     <img
-                      src="https://module-2-fp-example-website.vercel.app/assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg"
+                      src="./assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg"
                       alt="Up and down arrows"
                       class="feature__img"
                     />
@@ -217,7 +212,7 @@
                 <div class="feature__row">
                   <figure class="feature__img--wrapper">
                     <img
-                      src="https://module-2-fp-example-website.vercel.app/assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg"
+                      src="./assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg"
                       alt="Lightning bolt"
                       class="feature__img"
                     />
@@ -237,7 +232,7 @@
                 <div class="feature__row">
                   <figure class="feature__img--wrapper">
                     <img
-                      src="https://module-2-fp-example-website.vercel.app/assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg"
+                      src="./assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg"
                       alt="Person with a heart"
                       class="feature__img"
                     />
@@ -257,7 +252,7 @@
         </div>
       </section>
 
-      <section class="quality">
+      <section id="quality" class="quality">
         <div class="container">
           <div class="row">
             <div class="quality__description">
@@ -280,7 +275,7 @@
 
             <figure class="quality__img--wrapper">
               <img
-                src="https://module-2-fp-example-website.vercel.app/assets/hero-screenshot-1.40a097b525c2f8c9808e.png"
+                src="./assets/hero-screenshot-1.40a097b525c2f8c9808e.png"
                 alt="Treact website screenshot"
                 class="quality__img"
               />
@@ -289,12 +284,12 @@
         </div>
       </section>
 
-      <section class="steps">
+      <section id="steps" class="steps">
         <div class="container">
           <div class="row">
             <figure class="steps__img--wrapper">
               <img
-                src="https://module-2-fp-example-website.vercel.app/assets/hero-screenshot-2.241aac1fbc66db29d873.png"
+                src="./assets/hero-screenshot-2.241aac1fbc66db29d873.png"
                 alt="Dashboard screenshot"
               />
 
@@ -379,7 +374,7 @@
         </div>
       </section>
 
-      <section class="values">
+      <section id="values" class="values">
         <div class="container">
           <div class="row">
             <div class="values__description">
@@ -464,7 +459,7 @@
               <button class="btn">Learn More</button>
             </div>
             <img
-              src="https://module-2-fp-example-website.vercel.app/assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg"
+              src="./assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg"
               alt="Woman creating a draft and template"
               class="values__img"
             />
@@ -584,7 +579,7 @@
         <div class="container">
           <div class="row">
             <img
-              src="https://module-2-fp-example-website.vercel.app/assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg"
+              src="./assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg"
               alt="Illustration of customers sharing their appreciation"
               class="testimonials__img"
               loading="lazy"
@@ -623,7 +618,41 @@
 
                   <div class="testimonial__profile">
                     <img
-                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&amp;fit=crop&amp;w=160&amp;h=160&amp;q=80"
+                      src="./assets/photo-1494790108377-be9c29b29330.avif"
+                      alt="Charlotte Hale"
+                      class="testimonial__img"
+                      loading="lazy"
+                    />
+
+                    <div class="testimonial__details">
+                      <div class="testimonial__name">Charlotte Hale</div>
+                      <div class="testimonial__role">Director, Delos Inc.</div>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Duplicate testimonial -->
+                <article class="testimonial" hidden>
+                  <div
+                    class="testimonial__rating"
+                    role="img"
+                    aria-label="5 out of 5 stars"
+                  >
+                    <span aria-hidden="true">★★★★★</span>
+                  </div>
+
+                  <h3 class="testimonial__title">Amazing User Experience</h3>
+
+                  <p class="testimonial__para">
+                    The templates gave our team a clear starting point. We could
+                    customize the layouts, organize our content, and create a
+                    consistent experience across every page. The result was a
+                    website we were excited to share.
+                  </p>
+
+                  <div class="testimonial__profile">
+                    <img
+                      src="./assets/photo-1494790108377-be9c29b29330.avif"
                       alt="Charlotte Hale"
                       class="testimonial__img"
                       loading="lazy"
@@ -808,7 +837,7 @@
           <!-- Footer logo -->
           <a href="#landing" class="footer__logo">
             <img
-              src="https://module-2-fp-example-website.vercel.app/assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg"
+              src="./assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg"
               alt=""
               class="footer__logo--img"
             />
