@@ -1285,7 +1285,7 @@ footer {
   }
 
   .footer__columns {
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .footer__column {
@@ -1298,6 +1298,31 @@ footer {
   }
 }
 
+/* Footer spacing for small tablets */
+@media (min-width: 641px) and (max-width: 768px) {
+  footer {
+    padding: 64px 40px;
+  }
+
+  .footer__columns {
+    justify-content: center;
+    gap: 48px 40px;
+  }
+
+  .footer__column {
+    width: calc((100% - 80px) / 3);
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__divider {
+    margin: 48px 0 40px;
+  }
+
+  .footer__bottom {
+    gap: 24px;
+  }
+}
 /* Phones */
 
 @media (max-width: 640px) {
