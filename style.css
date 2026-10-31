@@ -121,3 +121,84 @@ section {
 .btn:hover {
   background: #5011cc;
 }
+
+/* Navigation */
+
+nav {
+  padding-top: 32px;
+}
+
+.nav__row,
+.nav__logo,
+.nav__links {
+  display: flex;
+  align-items: center;
+}
+
+.nav__row {
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.nav__logo {
+  gap: 12px;
+}
+
+.nav__logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.nav__title,
+.nav__logo--title {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 0.6px;
+}
+
+.nav__links {
+  gap: 40px;
+}
+
+.nav__link {
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+  font-size: 14px;
+  font-weight: 600;
+  transition:
+    color 0.3s,
+    border-color 0.3s;
+}
+
+.nav__link:hover {
+  color: #6415ff;
+  border-color: #6415ff;
+}
+
+.login {
+  margin-left: 24px;
+}
+
+.nav__link--primary {
+  padding: 12px 32px;
+  border: 0;
+  border-radius: 999px;
+  color: #fff;
+  background: #6415ff;
+}
+
+.nav__link--primary:hover {
+  color: #fff;
+  background: #5011cc;
+}
+
+.btn__menu {
+  display: none;
+  padding: 8px;
+  color: #243e63;
+  background: transparent;
+}
+
+.btn__menu--svg {
+  display: block;
+}
