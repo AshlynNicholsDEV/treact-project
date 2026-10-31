@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <script src="https://unpkg.com/feather-icons"></script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -472,95 +472,109 @@
         </div>
       </section>
 
-      <section class="pricing">
+      <!-- Pricing -->
+      <section id="pricing" class="pricing">
         <div class="container">
           <div class="row">
-            <div class="section__tag">
-              <h2 class="section__title">
-                Reasonable & Flexible <span class="purple">Plans.</span>
-              </h2>
+            <div class="section__tag">PRICING</div>
 
-              <p class="section__para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                ea vel, nostrum numquam laboriosam culpa animi dolore, quam
-                quaerat delectus vero modi sint necessitatibus quasi!
-              </p>
+            <h2 class="section__title">
+              Reasonable &amp; Flexible <span class="purple">Plans.</span>
+            </h2>
 
-              <div class="plans">
-                <div class="plan__stripe">
-                  <div class="plan__top">
-                    <div class="plan__name">PERSONAL</div>
-                    <div class="plan__price">$17.99</div>
-                    <div class="plan__duration">MONTHLY</div>
-                  </div>
+            <p class="section__para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ea
+              vel, nostrum numquam laboriosam culpa animi dolore, quam quaerat
+              delectus vero modi sint necessitatibus quasi!
+            </p>
 
-                  <div class="plan__middle">
-                    <div class="plan__target">For Individuals</div>
-                    <p class="plan__feature">30 Templates</p>
-                    <p class="plan__feature">7 Landing Pages</p>
-                    <p class="plan__feature">12 Internal Pages</p>
-                    <p class="plan__feature">Basic Assistance</p>
-                  </div>
+            <div class="plans">
+              <!-- Personal plan -->
+              <div class="plan">
+                <div class="plan__stripe"></div>
 
-                  <div class="plan__bottom">
-                    <button type="button" class="plan__button">BUY NOW</button>
-                  </div>
+                <div class="plan__top">
+                  <div class="plan__name">PERSONAL</div>
+                  <div class="plan__price">$17.99</div>
+                  <div class="plan__duration">MONTHLY</div>
                 </div>
 
-                <div class="plan__stripe">
-                  <div class="plan__top">
-                    <div class="plan__name">BUSINESS</div>
-                    <div class="plan__price">$37.99</div>
-                    <div class="plan__duration">MONTHLY</div>
-                  </div>
-
-                  <div class="plan__middle">
-                    <div class="plan__target">For Small Businesses</div>
-                    <p class="plan__feature">60 Templates</p>
-                    <p class="plan__feature">15 Landing Pages</p>
-                    <p class="plan__feature">22 Internal Pages</p>
-                    <p class="plan__feature">Priority Assistance</p>
-                  </div>
-
-                  <div class="plan__bottom">
-                    <button type="button" class="plan__button">BUY NOW</button>
-                  </div>
+                <div class="plan__middle">
+                  <div class="plan__target">For Individuals</div>
+                  <p class="plan__feature">30 Templates</p>
+                  <p class="plan__feature">7 Landing Pages</p>
+                  <p class="plan__feature">12 Internal Pages</p>
+                  <p class="plan__feature">Basic Assistance</p>
                 </div>
 
-                <div class="plan__stripe">
-                  <div class="plan__top">
-                    <div class="plan__name">ENTERPRISE</div>
-                    <div class="plan__price">$57.99</div>
-                    <div class="plan__duration">MONTHLY</div>
-                  </div>
-
-                  <div class="plan__middle">
-                    <div class="plan__target">For Large Companies</div>
-                    <p class="plan__feature">90 Templates</p>
-                    <p class="plan__feature">27 Landing Pages</p>
-                    <p class="plan__feature">37 Internal Pages</p>
-                    <p class="plan__feature">Personal Assistance</p>
-                  </div>
-
-                  <div class="plan__bottom">
-                    <button type="button" class="plan__button">BUY NOW</button>
-                  </div>
+                <div class="plan__bottom">
+                  <button type="button" class="plan__button">BUY NOW</button>
                 </div>
-                <svg
-                  width="600"
-                  height="600"
-                  viewBox="0 0 600 600"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="plans__blob"
-                >
-                  <g transform="translate(300,300)">
-                    <path
-                      d="M82,-98.3C129.8,-57.7,208.2,-54.1,229.6,-26.6C251.1,1,215.6,52.5,172.9,74.9C130.2,97.2,80.3,90.4,37.8,107.5C-4.8,124.7,-40,165.7,-63.3,162.3C-86.5,158.8,-97.8,110.9,-109.3,72.2C-120.7,33.5,-132.2,4.1,-140.1,-37.4C-147.9,-79,-152.1,-132.6,-128.1,-177.3C-104.1,-222.1,-52.1,-258,-17.5,-237.2C17.1,-216.4,34.3,-138.9,82,-98.3Z"
-                      fill="#FFB4BC"
-                    ></path>
-                  </g>
-                </svg>
               </div>
+
+              <!-- Business plan -->
+              <div class="plan">
+                <div class="plan__stripe"></div>
+
+                <div class="plan__top">
+                  <div class="plan__name">BUSINESS</div>
+                  <div class="plan__price">$37.99</div>
+                  <div class="plan__duration">MONTHLY</div>
+                </div>
+
+                <div class="plan__middle">
+                  <div class="plan__target">For Small Businesses</div>
+                  <p class="plan__feature">60 Templates</p>
+                  <p class="plan__feature">15 Landing Pages</p>
+                  <p class="plan__feature">22 Internal Pages</p>
+                  <p class="plan__feature">Priority Assistance</p>
+                </div>
+
+                <div class="plan__bottom">
+                  <button type="button" class="plan__button">BUY NOW</button>
+                </div>
+              </div>
+
+              <!-- Enterprise plan -->
+              <div class="plan">
+                <div class="plan__stripe"></div>
+
+                <div class="plan__top">
+                  <div class="plan__name">ENTERPRISE</div>
+                  <div class="plan__price">$57.99</div>
+                  <div class="plan__duration">MONTHLY</div>
+                </div>
+
+                <div class="plan__middle">
+                  <div class="plan__target">For Large Companies</div>
+                  <p class="plan__feature">90 Templates</p>
+                  <p class="plan__feature">27 Landing Pages</p>
+                  <p class="plan__feature">37 Internal Pages</p>
+                  <p class="plan__feature">Personal Assistance</p>
+                </div>
+
+                <div class="plan__bottom">
+                  <button type="button" class="plan__button">BUY NOW</button>
+                </div>
+              </div>
+
+              <!-- Pricing SVG decoration -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="600"
+                height="600"
+                viewBox="0 0 600 600"
+                class="plans__blob"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <g transform="translate(300,300)">
+                  <path
+                    d="M82,-98.3C129.8,-57.7,208.2,-54.1,229.6,-26.6C251.1,1,215.6,52.5,172.9,74.9C130.2,97.2,80.3,90.4,37.8,107.5C-4.8,124.7,-40,165.7,-63.3,162.3C-86.5,158.8,-97.8,110.9,-109.3,72.2C-120.7,33.5,-132.2,4.1,-140.1,-37.4C-147.9,-79,-152.1,-132.6,-128.1,-177.3C-104.1,-222.1,-52.1,-258,-17.5,-237.2C17.1,-216.4,34.3,-138.9,82,-98.3Z"
+                    fill="#FFB4BC"
+                  ></path>
+                </g>
+              </svg>
             </div>
           </div>
         </div>
